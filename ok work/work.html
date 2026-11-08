@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skill Swap School Registration</title>
+        <link rel="stylesheet" href="live.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="screen active" id="start-scr">
+                <h1>Skill Swap School</h1>
+                <p>Let's teach and learn together!</p>
+                <button id="start-btn">Register now!</button>
+            </div>
+            <div class="screen" id="con-scr">
+                <div id="sec1"><h1>Information</h1>
+                <p>Skill Swap School takes place every Friday, from 3 PM to 4 PM. After you submit this Forms, we will send a confirmation email to you. Please double check the spelling of your name and other information. When we find a match, we will notify you via an email.</p></div>
+                <div id="sec2"><h1>Terms and Conditions</h1>
+                <p>When you submit this form, you agree that everything you have entered in this form is all legitimate and true. You agree you have to be on time, unless urgent reasons provided (Ex. Medical Emergency, Natural Disaster, etc.).</p></div>
+                <button id="form-btn">I agree</button>
+            </div>
+            <div class="screen" id="form-scr">
+                <header class="form-header">
+                    <h1>Registration</h1>
+                    <p>We will use this information to find the best match for you.</p>
+                </header>
+                <form id="registration-form">
+                    <section class="form-section" aria-labelledby="contact-heading">
+                        <div class="section-heading">
+                            <span class="section-number" aria-hidden="true">01</span>
+                            <div>
+                                <h2 id="contact-heading">Your contacts</h2>
+                                <p>How we can reach you when we found a match.</p>
+                            </div>
+                        </div>
+                        <div class="field-grid">
+                            <div class="form-field">
+                                <label for="Email">Email address</label>
+                                <input type="email" id="Email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="phon">Phone number</label>
+                                <input type="tel" id="phon" name="phone" placeholder="Your phone number" autocomplete="tel" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="name">Your nickname</label>
+                                <input type="text" id="name" name="nickname" placeholder="What should we call you?" autocomplete="nickname" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="grade-level">Current education level</label>
+                                <select id="grade-level" name="grade" required>
+                                    <option value="" selected disabled>Select your grade</option>
+                                    <option value="grade7">Grade 7</option>
+                                    <option value="grade8">Grade 8</option>
+                                    <option value="grade9">Grade 9</option>
+                                    <option value="grade10">Grade 10</option>
+                                    <option value="grade11">Grade 11</option>
+                                    <option value="grade12">Grade 12</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="form-section" aria-labelledby="swap-heading">
+                        <div class="section-heading">
+                            <span class="section-number" aria-hidden="true">02</span>
+                            <div>
+                                <h2 id="swap-heading">Information for Skill Swapping</h2>
+                                <p>Choose at least one option.</p>
+                            </div>
+                        </div>
+                        <fieldset class="choice-group">
+                            <legend>What subject do you know well?</legend>
+                            <div class="choice-grid">
+                                <label class="choice-card"><input type="checkbox" name="subjects-known" value="math"><span>Mathematics</span></label>
+                                <label class="choice-card"><input type="checkbox" name="subjects-known" value="science"><span>Science</span></label>
+                                <label class="choice-card"><input type="checkbox" name="subjects-known" value="english"><span>English</span></label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="choice-group">
+                            <legend>What subject would you like to learn?</legend>
+                            <div class="choice-grid">
+                                <label class="choice-card"><input type="checkbox" name="subjects-to-learn" value="math"><span>Mathematics</span></label>
+                                <label class="choice-card"><input type="checkbox" name="subjects-to-learn" value="science"><span>Science</span></label>
+                                <label class="choice-card"><input type="checkbox" name="subjects-to-learn" value="english"><span>English</span></label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="choice-group">
+                            <legend>When would you like to Skill Swap?</legend>
+                            <div class="choice-grid">
+                                <label class="choice-card"><input type="checkbox" name="time-window" value="first-half"><span>First half <small>3:00–3:30 PM</small></span></label>
+                                <label class="choice-card"><input type="checkbox" name="time-window" value="second-half"><span>Second half <small>3:30–4:00 PM</small></span></label>
+                                <label class="choice-card"><input type="checkbox" name="time-window" value="either"><span>Either time</span></label>
+                            </div>
+                        </fieldset>
+                        <div class="form-field">
+                            <label for="type-level">How would you like to learn?</label>
+                            <select id="type-level" name="session-type" required>
+                                <option value="" selected disabled>Select your type of studying</option>
+                                <option value="type1">Group</option>
+                                <option value="type2">One on one</option>
+                            </select>
+                        </div>
+                    </section>
+                    <button id="conf-btn" type="submit">Send registration</button>
+                </form>
+            </div>
+            <div class="screen" id="ty-page">
+                <h1>Thank you for registering our program!</h1>
+                <p>We will email you when we find a match</p>
+            </div>
+        </div>
+        <script src="stay.js"></script>
+    </body>
+</html>
